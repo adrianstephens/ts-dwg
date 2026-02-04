@@ -1,0 +1,36 @@
+{
+	"name": "@isopodlabs/dwg",
+	"version": "1.2.0",
+	"description": "Self contained package for DWG reading, writing and manipulation.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adrianstephens/ts-dwg.git"
+	},
+	"main": "dist/xml.js",
+	"files": [
+		"dist/**/*.{js,d.ts}",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint \"src/**/*.ts\"",
+		"test": "echo \"No tests specified\" && exit 0",
+		"prepare": "ts-patch install -s"
+	},
+	"keywords": [
+		"dwg",
+		"typescript"
+	],
+	"author": "Adrian Stephens",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.13.8",
+		"eslint": "^9.21.0",
+		"ts-patch": "^3.3.0",
+		"typescript-eslint": "^8.26.0"
+	},
+	"dependencies": {
+		"@isopodlabs/binary": "^1.5.0",
+		"ts-node": "^10.9.2"
+	}
+}
